@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        caption{
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        th {
+            border: 1px solid black;
+
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        #wrap {
+            border: 2px solid skyblue;
+            margin: 10px;
+            padding: 20px;
+            width: 440px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>식단표(담당 쉐프 → 이나현)</h1>
+        <table>
+            <caption>5월 9일 조식</caption>
+            <tbody>
+                <tr>
+                    <th>구분</th>
+                    <th colspan="5">메뉴</th>
+                </tr>
+                <tr>
+                    <th rowspan="5">시간<br>7시~9시</th>
+                    <th colspan="3">한식</th>
+                    <th colspan="5">양식</th>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="5">
+                        <ul>
+                            <li>현미밥</li>
+                            <li>소고기무국</li>
+                            <li>밑반찬4종류 </li>
+                        </ul>
+                    </td>
+                    <td colspan="3" rowspan="5">
+                        <ul>
+                            <li>모닝빵</li>
+                            <li>쨈&버터</li>
+                            <li>에그스크램블</li>
+                            <li>커피</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
