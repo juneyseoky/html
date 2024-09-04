@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div 요소 사용하기</title>
+    <style>
+        div#wrap {
+            width: 600px;
+            margin: 0 auto;
+            border: 3px solid #ff0000;;
+            padding: 10px;
+        }
+        #pets{
+            border: 3px solid #1900ff;
+            margin: 5px;
+            display: flex;
+        }
+        #cats{
+            border: 3px solid #00ff2a;
+            margin: 5px;
+        }
+        #dog{
+            border: 3px solid #ff00f2;
+            margin: 5px;
+        }
+        #etc{
+            border: 3px solid #a3ff2b;
+            margin: 5px;
+        }
+        #footer{
+            border: 3px solid #fa8500;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 기본적인 전체 레이아웃을 위한 div -->
+        <header id="header">
+            <h1>Welcom to PetStory.com</h1>
+        </header>
+        <main id="pets">
+            <article id="cats">
+                <h2>Cats</h2>
+                <p>
+                    Cats just like to sleep all day.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Et voluptatem esse laboriosam iusto nostrum
+                    amet fugiat sed alias libero molestiae,
+                    officiis optio numquam, dignissimos vel distinctio
+                    reprehenderit ipsum deserunt eligendi.
+                </p>
+            </article>
+            <article id="dog">
+                <h2>Dogs</h2>
+                <p>
+                    Dogs are usually awake more than eats.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iusto nam magni saepe, minus harum obcaecati officiis sequi,
+                    molestias amet nesciunt necessitatibus ratione a voluptas,
+                    tempore tenetur dolorum dicta error ipsam.
+                </p>
+            </article>
+        </main>
+        <aside id="etc">
+            <p>PetStorz.com can serve all your pet needs.</p>
+        </aside>
+        <footer id="footer">
+            <p>&copy;2005. PetStorz.com <br>
+                All trademarks and registered trademarks <br>
+                appearing on this site are the property of their <br>
+                respective owners.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

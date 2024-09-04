@@ -1,0 +1,24 @@
+#wrap {
+    margin: 0 auto;
+    width: 750px;
+    padding: 10px;
+    background-color: #dee0ff;
+}
+header img{
+    margin: 0 auto;
+    display: block;
+}
+p,
+li,
+span {
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.elixir {
+    display: flex;
+    margin-bottom: 10px;
+}
+.elixir span b{
+    font-size: 15px;
+}
