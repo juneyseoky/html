@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#wrap {
+            width: 500px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            color: rgb(179, 71, 164);
+        }
+        #bntField {
+            text-align: center;
+            border: none;
+        }
+        fieldset {
+            margin: 10px;
+        }
+        #nameAndColl,
+        #menuInfo {
+            margin: 30px;
+        }
+        span {
+            display: inline-block;
+            width: 80px;
+            font-weight: bold;
+        }
+        #menuInfo span {
+            display: inline-block;
+            width: 200px;
+            font-weight: normal;
+        }
+        .obj {
+            margin: 5px;
+        }
+        .textarea {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .label {
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px 0px 5px 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>상품 주문서</h1>
+        <form action="">
+            <fieldset id="info">
+                <legend>개인 정보</legend>
+                <div id="nameAndColl">
+                    <div class="obj">
+                        <span>이름</span><input type="text" name="name" placeholder="여백없이 입력">
+                    </div>
+                    <div class="obj">
+                        <span>연락처</span><input type="text" name="colled" placeholder="연락가능한 번호">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="address">
+                <legend>배송지 정보</legend>
+                <div id="nameAndColl">
+                    <div class="obj">
+                        <span>주소</span><input type="text" name="name" size="30">
+                    </div>
+                    <div class="obj">
+                        <span>전화번호</span><input type="text" name="colled">
+                    </div>
+                    <span class="label">메모</span><textarea class="textarea" rows="3" cols="30"></textarea>
+                </div>
+            </fieldset>
+            <fieldset id="orderInfo">
+                <legend>주문 정보</legend>
+                <div id="menuInfo">
+                    <input type="checkbox" checked>
+                    <span>과테말라 안티구아 (100g)</span>
+                    <input type="text" placeholder="0" size="4">개
+                    <br>
+                    <input type="checkbox" >
+                    <span>인도네시아 만델링 (100g)</span>
+                    <input type="text" placeholder="0" size="4">개
+                    <br>
+                    <input type="checkbox" >
+                    <span>탐라는도다(블렌딩) (100g)</span>
+                    <input type="text" placeholder="0" size="4">개
+                    <br>
+                </div>
+            </fieldset>
+            <fieldset id="bntField">
+                <button type="submit">주문하기</button>
+                <button type="reset">다시 작성</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

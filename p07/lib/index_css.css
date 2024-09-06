@@ -1,0 +1,47 @@
+#wrap {
+    margin: 0 auto;
+    width: 480px;
+    border: 2px solid rgb(128, 128, 128);
+    padding: 10px;
+}
+
+.apple {
+    margin: 10px;
+}
+
+main#container {
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th:nth-child(1) {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    text-align: left;        
+    border: 1px solid #000;    
+    padding: 5px;
+}
+td{
+    border: 1px solid #bebebe;
+    height: 85px;
+    padding: 10px;
+    font-size: 15px;
+}
+font{
+    color: rgb(53, 53, 194);
+}
+span{
+    font-size: 10px;
+    color: rgb(255, 85, 85);
+}
+p{
+    font-weight: bold;
+}
+#tablefoot span{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}

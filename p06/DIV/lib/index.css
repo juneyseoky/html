@@ -1,0 +1,27 @@
+div#wrap {
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #ff0000;;
+    padding: 10px;
+}
+#pets{
+    border: 3px solid #1900ff;
+    margin: 5px;
+    display: flex;
+}
+#cats{
+    border: 3px solid #00ff2a;
+    margin: 5px;
+}
+#dog{
+    border: 3px solid #ff00f2;
+    margin: 5px;
+}
+#etc{
+    border: 3px solid #a3ff2b;
+    margin: 5px;
+}
+#footer{
+    border: 3px solid #fa8500;
+    margin: 5px;
+}

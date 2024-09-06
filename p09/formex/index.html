@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식 요소</title>
+    <style>
+        div#wrap {
+            width: 500px;
+            padding: 10px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        input[type=radio] {
+            width: 20px;
+            height: 20px;
+        }
+
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+        }
+
+        fieldset#checkBoxField {
+            width: 200px;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        fieldset#bntField {
+            width: 360px;
+            text-align: center;
+            border: none;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>form 하위 요소</h1>
+        <hr>
+
+        <form action="receive.html" method="get">
+
+            데이터_01 입력<input type="text" name="data01" maxlength="5">
+            <br><br>
+            암호 입력(=암호 입력상장)
+            <input type="password" name="data02">
+            <br><br>
+            <label>라디오 버튼</label><br>
+            성별
+            Male<input type="radio" value="Male" name="gender">
+            Famale<input type="radio" value="Famale" name="gender">
+            Underfined<input type="radio" value="Underfined" name="gender">
+            <br><br>
+            <fieldset id="checkBoxField">
+                <legend>체크박스 버튼</legend>
+                취미박스(다중 선택)
+                <br>
+                낚시<input type="checkbox" value="fishing" name="hobby">
+                게임<input type="checkbox" value="game" name="hobby">
+                영화<input type="checkbox" value="movie" name="hobby">
+            </fieldset>
+            <br>
+            <fieldset>
+                히든<input type="hidden" name="key" value="5">
+            </fieldset>
+            <fieldset id="bntField">
+                <button type="submit">버튼</button>
+                <button type="reset">초기화</button>
+            </fieldset>
+            <br><br>
+        </form>
+        <br><br>
+        데이터_02 입력<input type="text" name="data02" form="frm_01">
+        <br><br>
+
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <hr>
+        <br><br>
+        제목 <input type="text" name="" id="">
+        <br><br>
+
+        데이터_02 파일<input type="file" name="" from="frm_01">
+        <button type="submit" form="frm_01">버튼2</button>
+        <form action="http://www.daum.net" method="post" enctype="multipart/form-data" id="frm_01"></form>
+
+    </div>
+</body>
+
+</html>
